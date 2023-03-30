@@ -1,0 +1,15 @@
+---
+concurrency: 16
+base: 'http://localhost:3000'
+iterations: 2500
+rampup: 1
+
+plan:
+  - name: Tiny
+    include: plans/tiny.yml
+  - name: Small
+    include: plans/small.yml
+  - name: Medium
+    include: plans/medium.yml
+  - name: Large
+    include: plans/large.yml
